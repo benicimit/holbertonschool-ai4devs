@@ -1,5 +1,7 @@
-// Intended to calculate the sum of numbers in an array
-// Bug: Misuse of data types - treating strings as numbers without conversion
+// Type: Misuse of Data Types
+// Intended Behavior: Sum numeric values stored as strings.
+// Issue: Strings concatenated instead of converted and added.
+// Notes: Convert each element with parseInt/Number before adding.
 
 let numbers = ["1", "2", "3", "4", "5"];
 let sum = 0;

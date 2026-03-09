@@ -1,6 +1,8 @@
 <?php
-// Intended to check if a number is prime
-// Bug: Logical error - returns true when number is divisible instead of false
+// Type: Logical Error
+// Intended Behavior: Determine whether a number is prime.
+// Issue: Returns true when a divisor is found (should return false).
+// Notes: Invert return logic inside loop.
 
 function isPrime($n) {
     if ($n <= 1) {

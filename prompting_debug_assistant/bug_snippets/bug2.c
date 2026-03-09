@@ -5,8 +5,10 @@ int main() {
     int sum = 0;
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    // Intended to calculate the sum of the array
-    // Bug: Logical error - using multiplication instead of addition
+    // Type: Logical Error
+    // Intended Behavior: Calculate the sum of all elements in the array.
+    // Issue: Using multiplication assignment instead of addition.
+    // Notes: Should accumulate with += rather than *=.
     for(int i = 0; i < n; i++) {
         sum *= arr[i];  // Should be sum += arr[i]
     }

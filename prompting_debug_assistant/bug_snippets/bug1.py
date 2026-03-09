@@ -1,6 +1,8 @@
 # Bug 1: Python - Syntax Error
-# Intended to calculate the factorial of a number using recursion.
-# Bug: Missing colon after 'if n == 0'
+# Type: Syntax Error
+# Intended Behavior: Compute factorial of a number using recursion.
+# Issue: Missing colon after 'if n == 0' and missing '*' in recursive return.
+# Notes: Should handle n >= 0; base case n==0 returns 1.
 
 def factorial(n):
     if n == 0  # Missing colon here
