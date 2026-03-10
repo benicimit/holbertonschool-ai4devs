@@ -6,6 +6,9 @@ This document records the test cases and results for each fixed buggy snippet.
 - **Input**: n=5
 - **Expected Output**: 120
 - **Actual Output**: 120 ✅
+- **Additional Test**: n=0
+- **Expected Output**: 1
+- **Actual Output**: 1 ✅
 
 ## Bug 2 – bug2_fixed.c
 - **Input**: array = {1, 2, 3, 4, 5}
@@ -31,3 +34,6 @@ This document records the test cases and results for each fixed buggy snippet.
 - **Input**: number=7
 - **Expected Output**: 7 is prime
 - **Actual Output**: 7 is prime ✅
+- **Additional Test**: number=9
+- **Expected Output**: 9 is not prime
+- **Actual Output**: 9 is not prime ✅
