@@ -23,7 +23,7 @@ This document records the test cases and results for each fixed buggy snippet.
 - **Actual Output**: 1 2 3 4 5 6 7 8 9 10 ✅
 
 ## Bug 5 – bug5_fixed.js
-- **Input**: num1="5", num2="10"
+- **Input**: numbers = ["1", "2", "3", "4", "5"]
 - **Expected Output**: 15
 - **Actual Output**: 15 ✅
 
