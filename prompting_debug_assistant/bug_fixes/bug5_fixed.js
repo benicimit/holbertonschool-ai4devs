@@ -1,10 +1,13 @@
-// Type: Misuse of Data Types
-// Intended Behavior: Add two numbers and print the sum.
-// Issue: Concatenating strings instead of adding numbers.
-// Notes: Should convert strings to numbers before adding.
-let num1 = "5";
-let num2 = "10";
+// Type: Misuse of Data Types (Fixed)
+// Intended Behavior: Sum numeric values stored as strings.
+// Issue: Fixed - Convert each element with parseInt before adding.
+// Notes: Now converts strings to numbers before adding.
 
-let sum = parseInt(num1) + parseInt(num2);  // Fixed: added parseInt to convert strings to numbers
+let numbers = ["1", "2", "3", "4", "5"];
+let sum = 0;
 
-console.log("Sum: " + sum);
+for (let num of numbers) {
+    sum += parseInt(num);  // Fixed: added parseInt to convert string to number
+}
+
+console.log("Sum:", sum);
