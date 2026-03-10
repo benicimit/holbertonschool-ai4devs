@@ -19,20 +19,6 @@ HR teams responsible for employee satisfaction who need to:
 - Track participation and employee satisfaction metrics
 - Demonstrate the value of corporate programs
 
-### 3. Sustainability Officers
-Professionals responsible for environmental initiatives who want to:
-- Measure reductions in carbon emissions
-- Track sustainability performance metrics
-- Produce environmental impact reports
-- Support corporate sustainability goals
-
-### 4. Facility Managers
-Managers responsible for workplace infrastructure who need to:
-- Reduce parking congestion
-- Optimize parking space usage
-- Monitor transportation patterns
-- Lower parking infrastructure costs
-
 ## Key Features and Differentiators
 
 ### Smart Commute Matching
