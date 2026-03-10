@@ -1,3 +1,9 @@
+// Bug 4: Java - Off-by-one Error
+// Type: Off-by-one Error
+// Intended Behavior: Print integers from 1 to 10 (inclusive) on separate lines.
+// Issue: Loop condition used i < 10 instead of i <= 10, excluding 10.
+// Notes: Changed loop condition to include upper bound; classic fencepost error.
+
 public class Bug4 {
     public static void main(String[] args) {
         // Type: Off-by-One Error
