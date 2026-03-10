@@ -4,7 +4,7 @@
 // Issue: Loop condition used i < 10 instead of i <= 10, excluding 10.
 // Notes: Changed loop condition to include upper bound; classic fencepost error.
 
-public class Bug4 {
+public class bug4_fixed {
     public static void main(String[] args) {
         // Type: Off-by-One Error
         // Intended Behavior: Print numbers from 1 to 10 inclusive.

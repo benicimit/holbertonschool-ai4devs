@@ -20,7 +20,7 @@ This document records the test cases and results for each fixed buggy snippet.
 - **Expected Output**: Error: Division by zero is not allowed.
 - **Actual Output**: Error: Division by zero is not allowed. ✅
 
-## Bug 4 – Bug4.java
+## Bug 4 – bug4_fixed.java
 - **Input**: None
 - **Expected Output**: 1 2 3 4 5 6 7 8 9 10
 - **Actual Output**: 1 2 3 4 5 6 7 8 9 10 ✅
