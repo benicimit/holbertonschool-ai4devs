@@ -1,0 +1,27 @@
+graph TD
+    A[API Gateway] --> B[Authentication Service]
+    A --> C[User Service]
+    A --> D[Ride Matching Service]
+    A --> E[Schedule Service]
+    A --> F[Messaging Service]
+    A --> G[Analytics Service]
+    A --> H[Payment Service]
+    A --> I[Notification Service]
+    
+    B --> J[(Auth DB)]
+    C --> K[(User DB)]
+    D --> L[(Matching DB)]
+    E --> M[(Schedule DB)]
+    F --> N[(Messaging DB)]
+    G --> O[(Analytics DB)]
+    H --> P[(Payment DB)]
+    I --> Q[(Notification Queue)]
+    
+    D -.->|route data| C
+    D -.->|schedule data| E
+    F -.->|user info| C
+    G -.->|events| D
+    G -.->|events| H
+    H -.->|payment events| G
+    I -.->|consume events| Q
+    
