@@ -1,0 +1,18 @@
+graph TD
+    A[User Interface Layer] --> B[Authentication Module]
+    A --> C[Ride Matching Engine]
+    A --> D[Schedule Coordination Module]
+    A --> E[Analytics & Reporting Module]
+    A --> F[Messaging Module]
+    A --> G[User Management Module]
+    A --> H[Payment & Cost Tracking Module]
+    B --> I[Database Layer]
+    C --> I
+    D --> I
+    E --> I
+    F --> I
+    G --> I
+    H --> I
+    J[External Services] --> C
+    J --> E
+    J --> H

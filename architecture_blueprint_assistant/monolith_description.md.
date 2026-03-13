@@ -1,0 +1,23 @@
+# Monolithic Architecture Description – CarpoolConnect
+
+This monolithic architecture for CarpoolConnect integrates all components into a single, unified application deployed on shared infrastructure. Below is a description of the 8 key components:
+
+## Components
+
+1. **User Interface Layer**: Web and mobile interfaces (iOS/Android) that provide employees, HR managers, and administrators access to ride matching, scheduling, messaging, and analytics dashboards.
+
+2. **Authentication Module**: Handles Corporate Single Sign-On (SSO) integration with company credentials, session management, and role-based access control (RBAC) for different user types.
+
+3. **Ride Matching Engine**: Core algorithm that matches employees based on commute routes, schedules, and preferences. Returns ride matches in under 2 seconds to meet performance requirements.
+
+4. **Schedule Coordination Module**: Manages commute schedules, availability, and scheduling conflicts. Enables employees to set recurring commute patterns and adjust schedules as needed.
+
+5. **Messaging Module**: Provides in-app messaging and notifications for carpool members to communicate, coordinate pickups, delays, or changes to commute plans.
+
+6. **User Management Module**: Handles employee profiles, preferences, skills, and corporate hierarchy. Manages user registration, profile updates, and access permissions.
+
+7. **Analytics & Reporting Module**: Tracks environmental impact (CO₂ savings), cost savings per employee/organization, participation rates, and generates reports for HR and Sustainability Officers.
+
+8. **Payment & Cost Tracking Module**: Calculates shared costs, tracks expenses per carpool group, processes cost-splitting logic, and maintains financial records for audit purposes.
+
+All components share the same database and runtime environment, communicating directly within the application process. External services (e.g., mapping APIs, weather data) are integrated as needed.
