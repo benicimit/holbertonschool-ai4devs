@@ -1,23 +1,14 @@
-# Monolithic Architecture Description – CarpoolConnect
+# Monolithic Architecture Description
 
-This monolithic architecture for CarpoolConnect integrates all components into a single, unified application deployed on shared infrastructure. Below is a description of the 8 key components:
+This monolithic architecture for the AI Learning Assistant integrates all components into a single, unified application. Below is a short explanation of the key components:
 
-## Components
+1. **User Interface**: Handles web and mobile interactions, providing access to learning content, dashboards, and user controls.
+2. **Authentication Module**: Manages user login, registration, and session security using corporate SSO.
+3. **Learning Management Module**: Oversees course creation, enrollment, progress tracking, and adaptive learning paths.
+4. **AI Engine**: Processes user data to generate personalized recommendations, adaptive quizzes, and performance insights.
+5. **Content Management Module**: Stores and manages educational content, including videos, quizzes, and documents.
+6. **Analytics Module**: Collects and analyzes user data for progress reports, environmental impact (if applicable), and performance metrics.
+7. **Notification Module**: Sends alerts, reminders, and updates to users via email or in-app notifications.
+8. **Database**: A centralized data store for user profiles, content, analytics, and session data.
 
-1. **User Interface Layer**: Web and mobile interfaces (iOS/Android) that provide employees, HR managers, and administrators access to ride matching, scheduling, messaging, and analytics dashboards.
-
-2. **Authentication Module**: Handles Corporate Single Sign-On (SSO) integration with company credentials, session management, and role-based access control (RBAC) for different user types.
-
-3. **Ride Matching Engine**: Core algorithm that matches employees based on commute routes, schedules, and preferences. Returns ride matches in under 2 seconds to meet performance requirements.
-
-4. **Schedule Coordination Module**: Manages commute schedules, availability, and scheduling conflicts. Enables employees to set recurring commute patterns and adjust schedules as needed.
-
-5. **Messaging Module**: Provides in-app messaging and notifications for carpool members to communicate, coordinate pickups, delays, or changes to commute plans.
-
-6. **User Management Module**: Handles employee profiles, preferences, skills, and corporate hierarchy. Manages user registration, profile updates, and access permissions.
-
-7. **Analytics & Reporting Module**: Tracks environmental impact (CO₂ savings), cost savings per employee/organization, participation rates, and generates reports for HR and Sustainability Officers.
-
-8. **Payment & Cost Tracking Module**: Calculates shared costs, tracks expenses per carpool group, processes cost-splitting logic, and maintains financial records for audit purposes.
-
-All components share the same database and runtime environment, communicating directly within the application process. External services (e.g., mapping APIs, weather data) are integrated as needed.
+All components share the same codebase and runtime environment, communicating directly without network calls. External APIs (e.g., for third-party content) are integrated as needed.
