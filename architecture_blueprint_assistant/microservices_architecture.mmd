@@ -5,8 +5,6 @@ graph TD
     A --> E[Schedule Service]
     A --> F[Messaging Service]
     A --> G[Analytics Service]
-    A --> H[Payment Service]
-    A --> I[Notification Service]
     
     B --> J[(Auth DB)]
     C --> K[(User DB)]
@@ -14,14 +12,15 @@ graph TD
     E --> M[(Schedule DB)]
     F --> N[(Messaging DB)]
     G --> O[(Analytics DB)]
-    H --> P[(Payment DB)]
-    I --> Q[(Notification Queue)]
     
-    D -.->|route data| C
-    D -.->|schedule data| E
-    F -.->|user info| C
-    G -.->|events| D
-    G -.->|events| H
-    H -.->|payment events| G
-    I -.->|consume events| Q
+    D -->|sync: user profiles| C
+    D -->|sync: availability check| E
+    E -->|sync: carpool data| D
+    F -->|sync: user info| C
+    G -->|async: matching events| D
+    G -->|async: schedule events| E
+    G -->|async: messaging events| F
     
+    D -.->|event queue| G
+    E -.->|event queue| G
+    F -.->|event queue| G
