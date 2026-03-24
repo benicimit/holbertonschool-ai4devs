@@ -10,7 +10,6 @@ The purpose of the Study Planner application is to help students organize their 
 ### Primary Users
 - High school students
 - University students
-- Individuals who need help organizing study schedules and assignments
 
 ### Secondary Users (Future Scope)
 - Teachers (to assign and manage tasks)
@@ -29,15 +28,6 @@ The purpose of the Study Planner application is to help students organize their 
 - **Calendar / Schedule Screen**
   - Weekly and daily view of planned study sessions
 
-- **Subject View Screen**
-  - Tasks organized by subject (e.g., Math, English)
-
-- **Progress Tracking Screen**
-  - Visual representation of completed vs pending tasks
-
-- **Settings Screen**
-  - User preferences, notifications, and account settings
-
 ---
 
 ## 4. Actions
@@ -45,11 +35,6 @@ The purpose of the Study Planner application is to help students organize their 
 - Create a new task
 - Edit or delete existing tasks
 - Set deadlines and priorities
-- Mark tasks as completed
-- Schedule study sessions in calendar
-- View tasks by subject
-- Receive notifications/reminders
-- Track progress through visual indicators
 
 ---
 
